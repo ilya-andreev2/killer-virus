@@ -100,9 +100,10 @@ ggplot(largeDT[(strain != "STD"), ], aes(x = time, y = abs, color = plate_type, 
     axis.text = element_blank(),
     strip.background = element_blank()
   )
-#ggsave("T08_smooth_notext.pdf", width = 6, height = 5.25) # export
+ggsave("T08_smooth_notext.pdf", width = 6, height = 5.25) # export
 
-#Statistical analysis
+
+# Statistical analysis
 s_stat <- copy(s); s_stat <- s_stat[!(plate >= 3 | strain %like% "STD")]; s_stat[, "col" := NULL]; s_stat[, c("strain", "rep") := tstrsplit(strain, "-")]
 pheno_fAUC <- largeDT[!(strain %like% "STD"), AUC(time, abs), by = .(plate, strain, rep)]
 pheno_fAUC <- pheno_fAUC[, lapply(.SD, function(x) {return(x[2] / x[1])}), by = .(strain, rep), .SDcols = "V1"]
