@@ -1,6 +1,6 @@
 # sets working directory to the script location - only works in RStudio
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
-script.dir <- getwd()
+script_dir <- getwd()
 source("../utils.R")
 
 #MAIN SCRIPT

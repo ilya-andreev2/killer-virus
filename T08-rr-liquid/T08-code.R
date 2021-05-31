@@ -2,7 +2,7 @@ library(DescTools)
 
 # sets working directory to the script location - only works in RStudio
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
-script.dir <- getwd() # is used in code - need to Source script, not Run
+script_dir <- getwd() # is used in code - need to Source script, not Run
 source("../utils.R")
 
 
