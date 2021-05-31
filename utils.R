@@ -24,7 +24,7 @@ print.microplate <- function(microplate, col="magenta", ...) {
   print(microplate$data)
 }
 
-# FUNCTIONS
+# FUNCTIONS #meow
 # fit_nls_curve <- function(nls.model, time.points, na.flag) {
 #   if(na.flag == TRUE) { return( as.double(rep(NA, length(time.points))) ) }
 #   else { return( predict(nls.model, newdata=time.points) ) }
