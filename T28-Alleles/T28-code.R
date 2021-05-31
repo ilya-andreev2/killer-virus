@@ -1,8 +1,8 @@
 # sets working directory to the script location - only works in RStudio
 #setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
-script.dir <- dirname(sys.frame(1)$ofile) # is used in code - need to Source script, not Run
-setwd(script.dir)
+#script.dir <- dirname(sys.frame(1)$ofile) # is used in code - need to Source script, not Run
+#setwd(script.dir)
 
 library(ggplot2)
 library(gdata)
