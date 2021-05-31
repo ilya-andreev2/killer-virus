@@ -3,7 +3,7 @@ library(gdata)
 library(stringr)
 library(data.table)
 
-# OBJECTS
+# OBJECTS AND METHODS
 new_microplate <- function(data = data.table(),
                            nls_list = list(),
                            endpoint = FALSE) {
@@ -17,26 +17,12 @@ new_microplate <- function(data = data.table(),
 print.microplate <- function(microplate, col="magenta", ...) {
   plt <- ggplot(data = microplate$data) +
     geom_point(mapping=aes(x=time, y=abs), color=col) +
-    #geom_line(mapping=aes(x=time, y=fit)) +
     facet_wrap(~well, nrow=8) #+
-  #coord_cartesian(xlim=c(0,500))
   print(plt)
   print(microplate$data)
 }
 
-# FUNCTIONS #meow
-# fit_nls_curve <- function(nls.model, time.points, na.flag) {
-#   if(na.flag == TRUE) { return( as.double(rep(NA, length(time.points))) ) }
-#   else { return( predict(nls.model, newdata=time.points) ) }
-# }
-# 
-# refit_nls_curves <- function(p, i, a,b,c,t0) {
-#   gcurve <- p$data[id==i]
-#   p$nls_list[[i]] <- nls(abs ~ a/(1 + exp(-b*(time-t0)))+c, start=list(a=a, b=b, c=c, t0=t0), data=gcurve, algorithm="port", control=nls.control(maxiter=1000, warnOnly=TRUE), lower=c(-3,-1,-10,-200), upper=c(3,1,10,500) )
-#   p$data[id==i, "fit" := fit_nls_curve(p$nls_list[[i]], data.frame(time=1:.N), anyNA(abs))]
-#   return(p)
-# }
-
+# FUNCTIONS 
 blank_correct <- function(s) {
   min_abs <- 999999
   for (i in 1:nrow(s)) {
