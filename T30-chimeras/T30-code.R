@@ -1,13 +1,13 @@
 library(DescTools)
 library(RColorBrewer)
 
-# sets working directory to the script location - only works in RStudio
+# Sets working directory to the script location - only works in RStudio
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 script_dir <- getwd() # is used in code - need to Source script, not Run
 source("../utils.R")
 
 
-#MAIN SCRIPT
+# MAIN SCRIPT
 # Plate layout
 set.seed(85995)
 vec <- sample(c(rep("B", 8), paste_expand("18.2-", 1:4), paste_expand(0:20, "-", 1:4)), 96, replace=FALSE)
@@ -25,7 +25,6 @@ system("more T30_05062021/readme.info") # plate map
 
 s <- data.table(plate=rep(1:4,each=48),
                 id=rep(c(15:22, 27:34, 39:46, 51:58, 63:70, 75:82), 4) )
-
 strainDT <- as.data.table(matrix(c("17-2",   "8-4",    "20-3",   "18-1",   "15-1",   "3-3",    "19-1",   "10-3",   
                                    "11-3",   "6-4",    "19-4",   "16-3",   "B",      "11-4",   "B",      "4-2",    
                                    "1-2",    "18.2-1", "18.2-4", "1-3",    "0-3",    "13-4",   "14-4",   "2-1",    
@@ -42,9 +41,7 @@ strainDT <- as.data.table(matrix(c("17-2",   "8-4",    "20-3",   "18-1",   "15-1
 strainDT <- melt(strainDT, measure.vars = 1:ncol(strainDT))
 s[, "strain" := rep(strainDT$value, 2)]
 setkey(s, strain, plate)
-
 s[which(s[, strain] %in% paste_expand("1-",1:4))]
-
 s[, "col" := rep("red", 96*2)]
 s[which(s[, strain] %in% paste_expand("1-",1:4)), "col" := rep("royalblue3", 8)]
 s[, "ltype" := rep(c("solid", "dashed"), 96)]
@@ -72,16 +69,15 @@ ggplot(largeDT[(strain != "B"),], aes(x=time, y=abs, color=plate_type, shape=rep
   coord_cartesian( ylim=c(0, largeDT[, max(abs)]) ) +
   theme_classic() +
   guides(shape = FALSE, color = FALSE) +
-  theme(#axis.ticks.y = element_blank(), axis.text.y = element_blank(),
-    #panel.grid.major.x = element_line(),
+  theme(
     legend.position="top",
     axis.line=element_line(),
     axis.text=element_blank(),
     strip.background = element_blank()
   )
-
 ggsave("~/Desktop/T30_smooth_notext.pdf", width = 8, height = 6) # export
 
+# Statistical analysis
 s_stat <- copy(s); s_stat <- s_stat[!(plate >= 3 | strain %like% "B")]; s_stat[, 'col' := NULL]
 s_stat[, c('strain', 'rep') := tstrsplit(strain, '-')]
 
