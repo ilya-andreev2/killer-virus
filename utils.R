@@ -1,4 +1,4 @@
-#setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+# setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 library(ggplot2)
 library(gdata)
@@ -16,7 +16,7 @@ new_microplate <- function(data = data.table(),
   plate
 }
 
-print.microplate <- function(microplate, col="magenta", ...) {
+print.microplate <- function(microplate, col = "magenta", ...) {
   plt <- ggplot(data = microplate$data) +
     geom_point(mapping = aes(x = time, y = abs), color = col) +
     facet_wrap(~ well, nrow = 8) #+
@@ -32,15 +32,20 @@ blank_correct <- function(s) {
     min_temp <- min(microplates[[s[i, plate]]]$data[id == s[i, id]]$abs, na.rm = TRUE)
     if (min_temp < min_abs) {
       min_abs <- min_temp
-      }
+    }
   }
   return(min_abs)
 }
 
 plot_growth_curves <- function(dt, ids, time_factor = 0.427718, col = rep("blue", length(ids)), title = NULL) {
   c <- 1
-  plt <- ggplot() + theme_classic() + ggtitle(title) + xlab("Time (h)") + ylab(bquote("Absorbance ("*OD[600]*")"))
-  dt <- copy(dt); dt <- dt[, newtime := time * time_factor]
+  plt <- ggplot() +
+    theme_classic() +
+    ggtitle(title) +
+    xlab("Time (h)") +
+    ylab(bquote("Absorbance (" * OD[600] * ")"))
+  dt <- copy(dt)
+  dt <- dt[, newtime := time * time_factor]
   for (i in ids) {
     plt <- plt +
       geom_point(mapping = aes_string(x = dt[id == i]$newtime, y = dt[id == i]$abs), color = col[c]) +
@@ -51,13 +56,13 @@ plot_growth_curves <- function(dt, ids, time_factor = 0.427718, col = rep("blue"
   return(plt)
 }
 
-plot_2microplates <- function(mp1, mp2, col=c("green", "red")) {
+plot_2microplates <- function(mp1, mp2, col = c("green", "red")) {
   plt <- ggplot(data = mp1$data) +
     geom_point(mapping = aes(x = time, y = abs), color = col[1]) +
-    facet_wrap(~ well, nrow = 8)
+    facet_wrap(~well, nrow = 8)
   plt <- plt +
     geom_point(data = mp2$data, mapping = aes(x = time, y = abs), color = col[2]) +
-    facet_wrap(~ well, nrow = 8)
+    facet_wrap(~well, nrow = 8)
   print(plt)
 }
 
