@@ -85,10 +85,14 @@ pheno_fAUC <- largeDT[!(strain %like% "B"), AUC(time, abs), by = .(plate, strain
 pheno_fAUC <- pheno_fAUC[, lapply(.SD, function(x){return( x[2]/x[1] )}), by=.(strain, rep), .SDcols = "V1"]
 s_stat[, 'pheno_fAUC' := pheno_fAUC[,3] ]
 
+# ANOVA
 model <- aov(pheno_fAUC ~ strain, data = s_stat)
 summary(model)
+
+# Tukey's post-hoc HSD test
 TukeyHSD(model)
 
+# Dunnett's post-hoc test with chimera 1 (full YAR028W) as control
 DunnettTest(x = s_stat[, pheno_fAUC], g = as.factor(s_stat[, strain]), control = "1")
 
 
