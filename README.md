@@ -10,6 +10,8 @@ T08 - Liquid growth assay on 16 diverse S. cerevisiae strains
 
 T10 - BYxRM QTL mapping (segregant genotype data and QTL mapping algorithm was adopted from Gou et al. (Genetics, 2019))
 
+T26 - "Reference" DUP240 analysis (all distinct DUP240 genes found in 16 strains)
+
 T28 - YAR028W alleles
 
 T30 - UIP3/YAR028W chimeragenesis
