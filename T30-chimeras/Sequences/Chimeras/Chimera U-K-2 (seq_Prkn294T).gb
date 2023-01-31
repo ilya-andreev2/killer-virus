@@ -1,0 +1,57 @@
+LOCUS       Chimera_12.2             708 bp ds-DNA     linear       29-AUG-2021
+DEFINITION  .
+FEATURES             Location/Qualifiers
+     misc_feature    1..132
+                     /label="27C1"
+                     /ApEinfo_revcolor=#f58a5e
+                     /ApEinfo_fwdcolor=#f58a5e
+     CDS             1..447
+                     /label="Translation 1-447"
+     misc_feature    133..150
+                     /label="27-"
+                     /ApEinfo_revcolor=#faac61
+                     /ApEinfo_fwdcolor=#faac61
+     misc_feature    151..201
+                     /label="27H1"
+                     /ApEinfo_revcolor=#85dae9
+                     /ApEinfo_fwdcolor=#85dae9
+     misc_feature    202..219
+                     /label="27-"
+                     /ApEinfo_revcolor=#faac61
+                     /ApEinfo_fwdcolor=#faac61
+     misc_feature    220..270
+                     /label="27H2"
+                     /ApEinfo_revcolor=#c6c9d1
+                     /ApEinfo_fwdcolor=#c6c9d1
+     misc_feature    271..321
+                     /label="27-"
+                     /ApEinfo_revcolor=#d6b295
+                     /ApEinfo_fwdcolor=#d6b295
+     misc_feature    322..447
+                     /label="27C2"
+                     /ApEinfo_revcolor=#ffef86
+                     /ApEinfo_fwdcolor=#ffef86
+     CDS             448..708
+                     /label="Translation 448-708"
+     misc_feature    448..633
+                     /label="28-"
+                     /ApEinfo_revcolor=#ffef86
+                     /ApEinfo_fwdcolor=#ffef86
+     misc_feature    634..708
+                     /label="28C3"
+                     /ApEinfo_revcolor=#ff9ccd
+                     /ApEinfo_fwdcolor=#ff9ccd
+ORIGIN
+        1 ATGCAAACCC CTTCAGAAAA TACCGACGTC AAGTTGGATA CTCTCGACGA ACCCAGTGCA
+       61 CATTTAATCG AGGAAAATGT GGCTCTTCCA GAGGATACAT TCAATTCGTA CTGGAGTTAT
+      121 ATACTTAATG AAATCGCTCG TTGTAAACCG CTAATGATTA TGTTCCTAAT ACCTGTGTGT
+      181 TTGGTTTTAT TGATTACGTT TTTTCATGAT ATCAAAGGTA TCCTTGTGTT TTTAGTGATT
+      241 TCTCTTATCC TCTCTATTAT CATTTTATTG ATCGGTATAA CTGCCTTCGT GTCTGAGACC
+      301 TTGAATAAGG GTTTCATAAT TAAGCTTTTA GTAGAAGTCA TTACACGTAA ACCAGCAGTA
+      361 GGGGGGAAGG AATGGAGAAT AATCGCATAT AATATGAACC AGTATCTGTT TGACCATGGG
+      421 ATATGGCATA CTCCGTATTA CTTTTTTAGC GGCAAGAAGT GCCATGAGTT CTTCACCACT
+      481 CTTATCAAGG AAGTGAATTC TGGTTCGCAC TCGGATTCCT CATCGAATAG TGCCGAGGAT
+      541 ACACAATCAC CTGTCTCAGC AGGGAAGACT TCAAATGGTC TAAACAACTT TTATAGTATT
+      601 AGATCAGACC CTATTTTGAT GGCATATGTT TTGAAGGCAA CACAAATAGA AAAGGAGGCT
+      661 CAAAGTGAAT ACTGGAGAAA GCAATATCCT GACGCTGATT TACCTTGA
+//

@@ -1,0 +1,5 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Mark all CSV files as 'linguist-generated' to prevent linguist from classifying them as Visual Basic code
+*.csv linguist-generated

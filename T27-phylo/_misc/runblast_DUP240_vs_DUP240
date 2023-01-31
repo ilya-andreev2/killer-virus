@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo running DUP240 vs DUP240 blast . . . 
+export PATH=$PATH:$HOME/ncbi-blast-2.10.0+/bin
+export BLASTDB=$BLASTDB:$HOME/blastdb/
+
+blastn -db DUP240_nr -query RR_DUP240/REF_DUP240.fsa -out DUP240_vs_DUP240.default.out

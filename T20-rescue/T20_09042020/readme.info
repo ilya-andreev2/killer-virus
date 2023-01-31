@@ -1,0 +1,13 @@
+Phenotypic Rescue Full Experiment (09-04-20)
+
+      Plate 1   Plate 2   Plate 3   Plate 4   Plate 5   Plate 6
+Row B "MSY91-2" "MSY98-4" "MSY96-1" "MSY95-2" "MSY98-1" "MSY97-3"
+Row C "MSY93-3" "MSY96-3" "MSY94-2" "MSY95-3" "MSY92-3" "MSY97-2"
+Row D "MSY99-3" "MSY91-4" "MSY94-1" "MSY99-2" "MSY98-3" "MSY92-2"
+Row E "MSY94-4" "MSY93-2" "MSY96-2" "MSY97-1" "MSY95-1" "MSY97-4"
+Row F "MSY98-2" "MSY93-1" "MSY91-3" "MSY93-4" "MSY91-1" "MSY99-4"
+Row G "MSY95-4" "MSY92-1" "MSY96-4" "MSY92-4" "MSY94-3" "MSY99-1"
+
+Plate 7 - control (2xMSY1, 2xMSY8, 2xKO-YAR028W)
+
+Note: wells 91-1 and 92-4 are switched (-> accounted for in R code)

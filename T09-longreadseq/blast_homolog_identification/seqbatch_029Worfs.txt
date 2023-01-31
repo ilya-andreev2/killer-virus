@@ -1,0 +1,13 @@
+chrI_273614 -range 167769-168041 -strand plus
+chrI_BY -range 187090-187314 -strand plus
+chrI_CBS2888 -range 174971-175243 -strand plus
+chrI_CLIB219 -range 178302-178526 -strand plus
+chrI_CLIB413 -range 181895-182167 -strand plus
+chrI_I14 -range 174243-174437 -strand plus
+chrI_RM -range 165251-165523 -strand plus
+chrI_Y10 -range 190583-190855 -strand plus
+chrI_YJM978 -range 191106-191330 -strand plus
+chrI_YJM981 -range 175736-176008 -strand plus
+chrI_YPS1009 -range 186050-186355 -strand plus
+chrI_YPS163 -range 175434-176009 -strand plus
+chrI_YPS163 -range 179037-179261 -strand plus

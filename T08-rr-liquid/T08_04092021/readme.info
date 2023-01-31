@@ -1,0 +1,28 @@
+T08 - Round Robin Liquid Growth Assay (04/09/2020)
+
+Plate map:
+          Column 3 Column 4 Column 5 Column 6 Column 7 Column 8 Column 9 Column 10
+Plate 1 B "33-4"   "31-5"   "STD-6"  "37-2"   "32-2"   "30-3"   "29-2"   "26-5"   
+Plate 1 C "25-1"   "35-3"   "32-4"   "24-1"   "STD-7"  "STD-13" "37-1"   "35-2"   
+Plate 1 D "37-4"   "26-4"   "31-2"   "24-5"   "STD-5"  "34-2"   "32-1"   "33-2"   
+Plate 1 E "STD-15" "31-3"   "STD-12" "STD-10" "39-2"   "36-5"   "27-1"   "24-4"   
+Plate 1 F "30-1"   "30-2"   "34-1"   "28-4"   "38-4"   "35-1"   "STD-3"  "36-4"   
+Plate 1 G "24-3"   "28-1"   "24-2"   "25-3"   "31-1"   "33-5"   "28-3"   "39-3"   
+   
+Plate 2 B "27-3"   "34-3"   "25-5"   "38-3"   "26-2"   "37-3"   "STD-2"  "STD-9"  
+Plate 2 C "27-2"   "STD-14" "29-1"   "36-2"   "39-4"   "29-3"   "36-1"   "28-5"   
+Plate 2 D "28-2"   "33-1"   "25-4"   "27-4"   "30-5"   "26-3"   "STD-1"  "25-2"   
+Plate 2 E "29-5"   "38-1"   "30-4"   "35-4"   "34-5"   "39-5"   "38-2"   "STD-4"  
+Plate 2 F "35-5"   "34-4"   "36-3"   "32-3"   "37-5"   "STD-11" "29-4"   "STD-16" 
+Plate 2 G "33-3"   "32-5"   "STD-8"  "39-1"   "38-5"   "27-5"   "31-4"   "26-1"  
+
+Standard curve map: V_toxic:V_nontoxic (uL):
+  STD-1       STD-2        STD-3        STD-4        STD-5        STD-6        STD-7       STD-8      
+  "160.0:0.0" "149.3:10.7" "138.7:21.3" "128.0:32.0" "117.3:42.7" "106.7:53.3" "96.0:64.0" "85.3:74.7"
+
+  STD-9       STD-10      STD-11       STD-12       STD-13       STD-14       STD-15       STD-16     
+  "74.7:85.3" "64.0:96.0" "53.3:106.7" "42.7:117.3" "32.0:128.0" "21.3:138.7" "10.7:149.3" "0.0:160.0"
+
+48 h supernatant
+All STD wells hold strain RM (MSY26), each STD well is replicated 4x (1 T, 1 NT, 2 T, and 2 NT)
+1.5 uL inoculum from 24-hr culture in CSM-His pH 4.7 + 0.05% gelatine

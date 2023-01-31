@@ -1,0 +1,118 @@
+BLASTN 2.10.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: DUP240_nr.fasta
+           22 sequences; 15,111 total letters
+
+
+
+Query= REF-DUP_CLI4_CLIB413/120-300
+
+Length=181
+                                                                      Score        E
+Sequences producing significant alignments:                          (Bits)     Value
+
+REF_DUP_CLI4_CLIB413                                                  335        3e-95
+REF_DUP_YJM1_YJM454                                                   97.1       1e-23
+REF_SGD_MST28_BY                                                      75.0       7e-17
+REF_DUP_CLI5_CLIB219                                                  39.9       2e-06
+
+
+>REF_DUP_CLI4_CLIB413 
+Length=705
+
+ Score = 335 bits (181),  Expect = 3e-95
+ Identities = 181/181 (100%), Gaps = 0/181 (0%)
+ Strand=Plus/Plus
+
+Query  1    TTGGGTTTACAACATGCTTCATTATGAACCGATAATGATTCTGGGCGTGTTGCTCGTGAG  60
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  120  TTGGGTTTACAACATGCTTCATTATGAACCGATAATGATTCTGGGCGTGTTGCTCGTGAG  179
+
+Query  61   TTCAGTTTCATCGATCATACTTTTACATAATAACACCGCTTGTGTTGTCGTTTCTGCATT  120
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  180  TTCAGTTTCATCGATCATACTTTTACATAATAACACCGCTTGTGTTGTCGTTTCTGCATT  239
+
+Query  121  ATTGGCTTTTCTTTCTCTTGTGGCTTTGTTAGTAATGTTAGGTGATGGTTATCCAAGACT  180
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  240  ATTGGCTTTTCTTTCTCTTGTGGCTTTGTTAGTAATGTTAGGTGATGGTTATCCAAGACT  299
+
+Query  181  A  181
+            |
+Sbjct  300  A  300
+
+
+>REF_DUP_YJM1_YJM454 
+Length=723
+
+ Score = 97.1 bits (52),  Expect = 1e-23
+ Identities = 128/164 (78%), Gaps = 7/164 (4%)
+ Strand=Plus/Plus
+
+Query  12   ACATGCTTCATTATGAACCGATAATGATTCTGGGCG-TGTTGCTCGTGAGTTCAGTTTCA  70
+            ||||||||| |||| ||||||||||| ||| |||||  ||  | |||| ||||||||| |
+Sbjct  131  ACATGCTTCGTTATAAACCGATAATGGTTCCGGGCGCGGTATC-CGTGGGTTCAGTTTTA  189
+
+Query  71   TCGATCATACTTTTACATAATAACACCGCTTGTGTTGTCGTTTCTGCATTATTGGCTTTT  130
+            |||||| |  |||| ||  | |||| |||||| |||||| |||| ||| || |||||  |
+Sbjct  190  TCGATCGTGTTTTTGCACGACAACATCGCTTGCGTTGTCATTTCCGCAGTACTGGCTGGT  249
+
+Query  131  CTTTCTCTTG-TGGCTTTGTTAGTAATGTTAGGTGATGGTTATC  173
+             |||| |||| | |||||  | | | || |||||||||||||||
+Sbjct  250  ATTTC-CTTGTTCGCTTTAAT-G-ATTG-TAGGTGATGGTTATC  289
+
+
+>REF_SGD_MST28_BY 
+Length=705
+
+ Score = 75.0 bits (40),  Expect = 7e-17
+ Identities = 66/79 (84%), Gaps = 0/79 (0%)
+ Strand=Plus/Plus
+
+Query  98   GCTTGTGTTGTCGTTTCTGCATTATTGGCTTTTCTTTCTCTTGTGGCTTTGTTAGTAATG  157
+            ||||||||| ||  ||||||| |||| ||||||  ||||||||| | ||||||| |||| 
+Sbjct  217  GCTTGTGTTTTCAATTCTGCAATATTTGCTTTTACTTCTCTTGTAGGTTTGTTAATAATA  276
+
+Query  158  TTAGGTGATGGTTATCCAA  176
+            ||| |||||||| ||||||
+Sbjct  277  TTAAGTGATGGTAATCCAA  295
+
+
+>REF_DUP_CLI5_CLIB219 
+Length=723
+
+ Score = 39.9 bits (21),  Expect = 2e-06
+ Identities = 33/39 (85%), Gaps = 0/39 (0%)
+ Strand=Plus/Plus
+
+Query  2    TGGGTTTACAACATGCTTCATTATGAACCGATAATGATT  40
+            ||| ||||| |||| ||||||||| ||||| || |||||
+Sbjct  121  TGGATTTACGACATACTTCATTATAAACCGGTAGTGATT  159
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 2472101
+
+
+  Database: DUP240_nr.fasta
+    Posted date:  Aug 31, 2020  8:45 PM
+  Number of letters in database: 15,111
+  Number of sequences in database:  22
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5
