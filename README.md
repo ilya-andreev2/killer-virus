@@ -16,17 +16,17 @@ T10 - QTL mapping on haploid progeny from BYxRM cross (Fig. 2 B and C)
 
 T13 - Panel Strains Variant Analysis (Dataset S1)
 
-T19 - UIP3-KO vs YAR028W-KO (Fig. S5)
+T19 - UIP3-KO vs KTD1-KO (Fig. S5)
 
-T20 - YAR028W and YAR023C Resistance Phenotype Rescue (Fig. 2 D and E, Fig. S6)
+T20 - KTD1 and YAR023C Resistance Phenotype Rescue (Fig. 2 D and E, Fig. S6)
 
 T25 - K28 Toxin Adsorption (Figs. 4A and S8)
 
 T27 - Phylogenetic Analysis of DUP240 Family (Fig. S13, Table S4)
 
-T28 - YAR028W Alleles in BY ktd1-KO (Figs. 3B and S7)
+T28 - KTD1 Alleles in BY ktd1-KO (Figs. 3B and S7)
 
-T30 - UIP3/YAR028W Chimeragenesis (Figs. 5A and S11)
+T30 - UIP3/KTD1 Chimeragenesis (Figs. 5A and S11)
 
 ## Code Instructions
 
