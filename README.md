@@ -1,4 +1,5 @@
 # Analysis for "Discovery of a rapidly evolving yeast defense factor, _KTD1_, against the secreted killer toxin K28"
+[![DOI](https://zenodo.org/badge/595739089.svg)](https://zenodo.org/badge/latestdoi/595739089)
 
 This repository contains the data and code pertinent to the following paper:
 
