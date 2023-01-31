@@ -30,6 +30,6 @@ T30 - UIP3/KTD1 Chimeragenesis (Figs. 5A and S11)
 
 ## Code Instructions
 
-Download this repository and run the desired _T##-code.R_ code in RStudio. The code was not tested thoroughly on Mac, only Windows - you might need to troubleshoot a bit.
+Download this repository and run the desired _T##-code.R_ code in RStudio. The code was not tested thoroughly on Mac, only Windows.
 
 The R files in each folder generally follow the same structure, adapted to the particular experimental settings. If this is your first time running this code, we recommend starting with _T10-code.R_ (QTL mapping) as it's slightly better annotated.
